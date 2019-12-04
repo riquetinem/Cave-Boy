@@ -30,7 +30,7 @@ switch (state) {
 			
 			if (xspeed == 0 && yspeed == 0) {
 				state = spider.idle;
-				alar[0] = 15;
+				alarm[0] = 15;
 				image_speed = 0;
 				image_index = 0;
 			}

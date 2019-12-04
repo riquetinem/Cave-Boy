@@ -11,7 +11,6 @@ if (state != player.hurt) {
 	
 	move(obj_solo);
 	
-	if (instance_exists(obj_player_stats)) {
-		obj_player_stats.hp -= 1;	
-	}
+	if (instance_exists(obj_player_stats))
+		obj_player_stats.hp -= 1;
 }

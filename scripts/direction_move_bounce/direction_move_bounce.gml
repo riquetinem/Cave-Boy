@@ -18,9 +18,10 @@ if (place_meeting(x, y + yspeed, collision_object)) {
 		y += sign(yspeed);
 	}
 	yspeed = -(yspeed / 4);
-	if (abs(yspeed) < 2) {
+	
+	if (abs(yspeed) < 2)
 		yspeed = 0;
-	}
+
 }
 
 y += yspeed;
