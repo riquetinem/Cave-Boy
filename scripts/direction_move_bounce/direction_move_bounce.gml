@@ -1,4 +1,4 @@
-/// @description direction_move_bounce(collision_object)
+/// @description move(collision_object)
 /// @param collision_object
 var collision_object = argument0;
 
@@ -18,10 +18,9 @@ if (place_meeting(x, y + yspeed, collision_object)) {
 		y += sign(yspeed);
 	}
 	yspeed = -(yspeed / 4);
-	
-	if (abs(yspeed) < 2)
+	if (abs(yspeed) < 2) {
 		yspeed = 0;
-
+	}
 }
 
 y += yspeed;

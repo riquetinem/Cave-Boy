@@ -4,8 +4,10 @@ var amount = argument0;
 
 //First check to see if we're moving
 if (xspeed != 0) {
-	if (abs(xspeed) - amount > 0)
+	if (abs(xspeed) - amount > 0) {
 		xspeed -= amount * image_xscale;
-	else
+	}
+	else {
 		xspeed = 0;
+	}
 }

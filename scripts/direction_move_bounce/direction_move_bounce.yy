@@ -1,5 +1,5 @@
 {
-    "id": "ec6ee4b7-96f7-4dc8-8d2e-56431ecdb826",
+    "id": "1deeefee-2d5a-4e25-984c-2a49e974404d",
     "modelName": "GMScript",
     "mvc": "1.0",
     "name": "direction_move_bounce",

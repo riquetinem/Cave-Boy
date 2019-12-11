@@ -1,16 +1,17 @@
-///@description take_damage
+/// @description take_damage
 if (state != player.hurt) {
 	state = player.hurt;
 	
 	audio_play_sound(a_ouch, 8, false);
 	
-	image_blend = make_color_rgb(220, 150, 150);
+	image_blend = make_colour_rgb(220, 150, 150);
 	
 	yspeed = -6;
 	xspeed = (sign(x - other.x) * 8);
 	
-	move(obj_solo);
+	move(o_solid);
 	
-	if (instance_exists(obj_player_stats))
-		obj_player_stats.hp -= 1;
+	if (instance_exists(o_player_stats)) {
+		o_player_stats.hp -= 1;
+	}
 }
